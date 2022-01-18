@@ -1,0 +1,52 @@
+<h1>JOIN US</h1>
+
+<p class="lead">
+  Enter your contact information to join <strong><%=data%></strong> others. We
+  have cookies!
+</p>
+
+<p>Check out how many unclaimed books we have <a href="/booksLeft">here</a>.</p>
+
+<h2>Registration</h2>
+
+<form method="POST" action="/register">
+  <input
+    type="text"
+    class="form"
+    name="firstname"
+    placeholder="Enter Your Name"
+  />
+  <input
+    type="text"
+    class="form"
+    name="lastname"
+    placeholder="Enter Your lastname"
+  />
+  <input type="text" class="form" name="email" placeholder="Enter Your Email" />
+  <button>Join Now</button>
+</form>
+
+<h2>Updating users email</h2>
+
+<form method="POST" action="/update">
+  <input
+    type="text"
+    class="form"
+    name="firstname"
+    placeholder="Enter Your Name"
+  />
+  <input
+    type="text"
+    class="form"
+    name="newEmail"
+    placeholder="Enter Your new email"
+  />
+  <button>Update</button>
+</form>
+
+<h2>Delete user by his email</h2>
+
+<form method="POST" action="/delete">
+  <input type="text" class="form" name="email" placeholder="Enter user email" />
+  <button>Delete user</button>
+</form>
